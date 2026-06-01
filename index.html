@@ -483,8 +483,8 @@
       </div>
     </div>
 
-    <div class="quiz-slide" id="slide-22">
-      <div class="quiz-q-num">Английский язык · 16 из 22</div>
+        <div class="quiz-slide" id="slide-22">
+      <div class="quiz-q-num">Английский язык · 16 из 18</div>
       <div class="quiz-q">Посмотрите видео и ответьте на вопросы</div>
       <div class="eng-video-wrap">
         <iframe
@@ -495,73 +495,57 @@
           allowfullscreen>
         </iframe>
       </div>
+      <div class="quiz-q" style="margin-top:18px;">What's the girl's name?</div>
+      <div class="options-grid eng-grid" id="opts-22-1">
+        <button class="opt" onclick="answerEngMulti(this, '22_1', false, 22, 3)"><div class="opt-text"><strong>Tom</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_1', true, 22, 3)"><div class="opt-text"><strong>Rosy</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_1', false, 22, 3)"><div class="opt-text"><strong>Suzy</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_1', false, 22, 3)"><div class="opt-text"><strong>Billy</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">What colour are Tim's eyes?</div>
+      <div class="options-grid eng-grid" id="opts-22-2">
+        <button class="opt" onclick="answerEngMulti(this, '22_2', true, 22, 3)"><div class="opt-text"><strong>Green</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_2', false, 22, 3)"><div class="opt-text"><strong>Two</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_2', false, 22, 3)"><div class="opt-text"><strong>Brown</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_2', false, 22, 3)"><div class="opt-text"><strong>Nose</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">How old is Billy?</div>
+      <div class="options-grid eng-grid" id="opts-22-3">
+        <button class="opt" onclick="answerEngMulti(this, '22_3', false, 22, 3)"><div class="opt-text"><strong>Five</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_3', false, 22, 3)"><div class="opt-text"><strong>Brother</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_3', true, 22, 3)"><div class="opt-text"><strong>Two</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '22_3', false, 22, 3)"><div class="opt-text"><strong>Sister</strong></div></button>
+      </div>
+      <div class="eng-feedback" id="eng-note-22"></div>
       <div class="nav-row">
         <button class="btn-back" onclick="goBack(22)">← Назад</button>
-        <button class="btn-next" onclick="goNext(22)">Я посмотрел →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-23">
-      <div class="quiz-q-num">Английский язык · 17 из 22</div>
-      <div class="quiz-q">What's the girl's name?</div>
-      <div class="options-grid eng-grid" id="opts-eng-17">
-        <button class="opt" onclick="answerEng(this, 23, false)"><div class="opt-text"><strong>Tom</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 23, true)"><div class="opt-text"><strong>Rosy</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 23, false)"><div class="opt-text"><strong>Suzy</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 23, false)"><div class="opt-text"><strong>Billy</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-23"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(23)">← Назад</button>
-        <button class="btn-next" id="next23" onclick="goNext(23)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-24">
-      <div class="quiz-q-num">Английский язык · 18 из 22</div>
-      <div class="quiz-q">What colour are Tim's eyes?</div>
-      <div class="options-grid eng-grid" id="opts-eng-18">
-        <button class="opt" onclick="answerEng(this, 24, true)"><div class="opt-text"><strong>Green</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 24, false)"><div class="opt-text"><strong>Two</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 24, false)"><div class="opt-text"><strong>Brown</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 24, false)"><div class="opt-text"><strong>Nose</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-24"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(24)">← Назад</button>
-        <button class="btn-next" id="next24" onclick="goNext(24)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-25">
-      <div class="quiz-q-num">Английский язык · 19 из 22</div>
-      <div class="quiz-q">How old is Billy?</div>
-      <div class="options-grid eng-grid" id="opts-eng-19">
-        <button class="opt" onclick="answerEng(this, 25, false)"><div class="opt-text"><strong>Five</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 25, false)"><div class="opt-text"><strong>Brother</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 25, true)"><div class="opt-text"><strong>Two</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 25, false)"><div class="opt-text"><strong>Sister</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-25"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(25)">← Назад</button>
-        <button class="btn-next" id="next25" onclick="goNext(25)" disabled>Далее →</button>
+        <button class="btn-next" id="next22" onclick="goNext(22)" disabled>Далее →</button>
       </div>
     </div>
 
     <div class="quiz-slide" id="slide-26">
-      <div class="quiz-q-num">Английский язык · 20 из 22</div>
-      <div class="eng-reading-text">
-        Anna goes to the park with her little dog. They like to play together.
-        Anna throws a red ball, and her dog runs fast to catch it.
-        They laugh and have fun in the sun.
+      <div class="quiz-q-num">Английский язык · 17 из 18</div>
+      <div class="eng-reading-text">Anna goes to the park with her little dog. They like to play together. Anna throws a red ball, and her dog runs fast to catch it. They laugh and have fun in the sun.</div>
+      <div class="quiz-q" style="margin-top:18px;">Where do Anna and her dog play?</div>
+      <div class="options-grid eng-grid" id="opts-26-1">
+        <button class="opt" onclick="answerEngMulti(this, '26_1', false, 26, 3)"><div class="opt-text"><strong>At home</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_1', false, 26, 3)"><div class="opt-text"><strong>In a shop</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_1', true, 26, 3)"><div class="opt-text"><strong>In the park</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_1', false, 26, 3)"><div class="opt-text"><strong>At school</strong></div></button>
       </div>
-      <div class="quiz-q">Where do Anna and her dog play?</div>
-      <div class="options-grid eng-grid" id="opts-eng-20">
-        <button class="opt" onclick="answerEng(this, 26, false)"><div class="opt-text"><strong>At home</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 26, false)"><div class="opt-text"><strong>In a shop</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 26, true)"><div class="opt-text"><strong>In the park</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 26, false)"><div class="opt-text"><strong>At school</strong></div></button>
+      <div class="quiz-q" style="margin-top:18px;">Anna has got a _____</div>
+      <div class="options-grid eng-grid" id="opts-26-2">
+        <button class="opt" onclick="answerEngMulti(this, '26_2', false, 26, 3)"><div class="opt-text"><strong>Cat</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_2', false, 26, 3)"><div class="opt-text"><strong>Cow</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_2', true, 26, 3)"><div class="opt-text"><strong>Dog</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_2', false, 26, 3)"><div class="opt-text"><strong>Apple</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">What does Anna's dog like to do?</div>
+      <div class="options-grid eng-grid" id="opts-26-3">
+        <button class="opt" onclick="answerEngMulti(this, '26_3', true, 26, 3)"><div class="opt-text"><strong>Run and catch a ball</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_3', false, 26, 3)"><div class="opt-text"><strong>Read a book</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_3', false, 26, 3)"><div class="opt-text"><strong>Watch TV</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '26_3', false, 26, 3)"><div class="opt-text"><strong>Go shopping</strong></div></button>
       </div>
       <div class="eng-feedback" id="eng-note-26"></div>
       <div class="nav-row">
@@ -570,49 +554,7 @@
       </div>
     </div>
 
-    <div class="quiz-slide" id="slide-27">
-      <div class="quiz-q-num">Английский язык · 21 из 22</div>
-      <div class="eng-reading-text">
-        Anna goes to the park with her little dog. They like to play together.
-        Anna throws a red ball, and her dog runs fast to catch it.
-        They laugh and have fun in the sun.
-      </div>
-      <div class="quiz-q">Выберите правильный вариант: Anna has got a _____</div>
-      <div class="options-grid eng-grid" id="opts-eng-21">
-        <button class="opt" onclick="answerEng(this, 27, false)"><div class="opt-text"><strong>Cat</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 27, false)"><div class="opt-text"><strong>Cow</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 27, true)"><div class="opt-text"><strong>Dog</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 27, false)"><div class="opt-text"><strong>Apple</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-27"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(27)">← Назад</button>
-        <button class="btn-next" id="next27" onclick="goNext(27)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-28">
-      <div class="quiz-q-num">Английский язык · 22 из 22</div>
-      <div class="eng-reading-text">
-        Anna goes to the park with her little dog. They like to play together.
-        Anna throws a red ball, and her dog runs fast to catch it.
-        They laugh and have fun in the sun.
-      </div>
-      <div class="quiz-q">What does Anna's dog like to do?</div>
-      <div class="options-grid eng-grid" id="opts-eng-22">
-        <button class="opt" onclick="answerEng(this, 28, true)"><div class="opt-text"><strong>Run and catch a ball</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 28, false)"><div class="opt-text"><strong>Read a book</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 28, false)"><div class="opt-text"><strong>Watch TV</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 28, false)"><div class="opt-text"><strong>Go shopping</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-28"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(28)">← Назад</button>
-        <button class="btn-next" id="next28" onclick="goNext(28)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-38">
+<div class="quiz-slide" id="slide-38">
       <div class="quiz-q-num">Английский язык · 1 из 31</div>
       <div class="quiz-q">Дополните предложение: The shower is in the __________.</div>
       <div class="options-grid eng-grid" id="opts-teen-38">
@@ -1020,81 +962,70 @@
       </div>
     </div>
 
-    <div class="quiz-slide" id="slide-62">
-      <div class="quiz-q-num">Английский язык · 25 из 31</div>
+        <div class="quiz-slide" id="slide-62">
+      <div class="quiz-q-num">Английский язык · 25 из 27</div>
       <div class="quiz-q">Посмотрите видео и ответьте на вопросы</div>
       <div class="eng-video-wrap">
         <iframe
-          src="https://www.youtube.com/embed/yHIpT0KzQ0I"
+          src="https://www.youtube.com/embed/xeUWObqKLEQ"
           title="English video"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
+      <div class="quiz-q" style="margin-top:18px;">Tip 1</div>
+      <div class="options-grid eng-grid" id="opts-62-1">
+        <button class="opt" onclick="answerEngMulti(this, '62_1', false, 62, 3)"><div class="opt-text"><strong>Make a map</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_1', true, 62, 3)"><div class="opt-text"><strong>Plan your journey</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_1', false, 62, 3)"><div class="opt-text"><strong>Take your phone</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_1', false, 62, 3)"><div class="opt-text"><strong>Plan your free time</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">Tip 2</div>
+      <div class="options-grid eng-grid" id="opts-62-2">
+        <button class="opt" onclick="answerEngMulti(this, '62_2', true, 62, 3)"><div class="opt-text"><strong>Check your car</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_2', false, 62, 3)"><div class="opt-text"><strong>Read a map</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_2', false, 62, 3)"><div class="opt-text"><strong>Check your phone</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_2', false, 62, 3)"><div class="opt-text"><strong>Read a book</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">Tip 3</div>
+      <div class="options-grid eng-grid" id="opts-62-3">
+        <button class="opt" onclick="answerEngMulti(this, '62_3', false, 62, 3)"><div class="opt-text"><strong>Listen to music</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_3', false, 62, 3)"><div class="opt-text"><strong>Listen to the radio</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_3', true, 62, 3)"><div class="opt-text"><strong>Listen to traffic information</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '62_3', false, 62, 3)"><div class="opt-text"><strong>Listen to your mother</strong></div></button>
+      </div>
+      <div class="eng-feedback" id="eng-note-62"></div>
       <div class="nav-row">
         <button class="btn-back" onclick="goBack(62)">← Назад</button>
-        <button class="btn-next" onclick="goNext(62)">Я посмотрел →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-63">
-      <div class="quiz-q-num">Английский язык · 26 из 31</div>
-      <div class="quiz-q">What's the girl's name?</div>
-      <div class="options-grid eng-grid" id="opts-teen-63">
-        <button class="opt" onclick="answerEng(this, 63, false)"><div class="opt-text"><strong>Tom</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 63, true)"><div class="opt-text"><strong>Rosy</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 63, false)"><div class="opt-text"><strong>Suzy</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 63, false)"><div class="opt-text"><strong>Billy</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-63"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(63)">← Назад</button>
-        <button class="btn-next" id="next63" onclick="goNext(63)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-64">
-      <div class="quiz-q-num">Английский язык · 27 из 31</div>
-      <div class="quiz-q">What colour are Tim's eyes?</div>
-      <div class="options-grid eng-grid" id="opts-teen-64">
-        <button class="opt" onclick="answerEng(this, 64, true)"><div class="opt-text"><strong>Green</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 64, false)"><div class="opt-text"><strong>Two</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 64, false)"><div class="opt-text"><strong>Brown</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 64, false)"><div class="opt-text"><strong>Nose</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-64"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(64)">← Назад</button>
-        <button class="btn-next" id="next64" onclick="goNext(64)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-65">
-      <div class="quiz-q-num">Английский язык · 28 из 31</div>
-      <div class="quiz-q">How old is Billy?</div>
-      <div class="options-grid eng-grid" id="opts-teen-65">
-        <button class="opt" onclick="answerEng(this, 65, false)"><div class="opt-text"><strong>Five</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 65, false)"><div class="opt-text"><strong>Brother</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 65, true)"><div class="opt-text"><strong>Two</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 65, false)"><div class="opt-text"><strong>Sister</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-65"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(65)">← Назад</button>
-        <button class="btn-next" id="next65" onclick="goNext(65)" disabled>Далее →</button>
+        <button class="btn-next" id="next62" onclick="goNext(62)" disabled>Далее →</button>
       </div>
     </div>
 
     <div class="quiz-slide" id="slide-66">
-      <div class="quiz-q-num">Английский язык · 29 из 31</div>
-      <div class="eng-reading-text">A traditional full English breakfast includes egg, bacon, sausage, beans, mushrooms, tomatoes, and toast, with tea or coffee. However, most people start their working day with a piece of toast or some cereal — some don’t have anything at all.</div>
-      <div class="quiz-q">Ответьте на вопрос: What is not a traditional English breakfast?</div>
-      <div class="options-grid eng-grid" id="opts-teen-66">
-        <button class="opt" onclick="answerEng(this, 66, false)"><div class="opt-text"><strong>eggs and bacon</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 66, false)"><div class="opt-text"><strong>tea and toast</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 66, true)"><div class="opt-text"><strong>juice and cereal</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 66, false)"><div class="opt-text"><strong>beans and mushrooms</strong></div></button>
+      <div class="quiz-q-num">Английский язык · 26 из 27</div>
+      <div class="eng-reading-text">A traditional full English breakfast includes egg, bacon, sausage, beans, mushrooms, tomatoes, and toast, with tea or coffee. However, most people start their working day with a piece of toast or some cereal — some don’t have anything at all.<br><br>Lunch is between midday and 1.30 p.m., and in England people are more likely to have a smaller meal in the middle of the day. For example, a sandwich and a packet of crisps, or a takeaway, which they can eat at their desk. They often work while they eat.<br><br>Dinner is the biggest meal of the day and we have it between 6 and 8 p.m. Today, many families enjoy a traditional dinner on Sundays, but during the rest of the week we like to cook lots of different things, including food from other countries. Indian food is now more popular in England than fish and chips.</div>
+      <div class="quiz-q" style="margin-top:18px;">What is not a traditional English breakfast?</div>
+      <div class="options-grid eng-grid" id="opts-66-1">
+        <button class="opt" onclick="answerEngMulti(this, '66_1', false, 66, 3)"><div class="opt-text"><strong>eggs and bacon</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_1', false, 66, 3)"><div class="opt-text"><strong>tea and toast</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_1', true, 66, 3)"><div class="opt-text"><strong>juice and cereal</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_1', false, 66, 3)"><div class="opt-text"><strong>beans and mushrooms</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">Lunch is _____</div>
+      <div class="options-grid eng-grid" id="opts-66-2">
+        <button class="opt" onclick="answerEngMulti(this, '66_2', true, 66, 3)"><div class="opt-text"><strong>between 12 and 1.30 p.m.</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_2', false, 66, 3)"><div class="opt-text"><strong>in the evening</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_2', false, 66, 3)"><div class="opt-text"><strong>very big</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_2', false, 66, 3)"><div class="opt-text"><strong>after 2 o'clock</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_2', false, 66, 3)"><div class="opt-text"><strong>at home</strong></div></button>
+      </div>
+      <div class="quiz-q" style="margin-top:18px;">Про ужин (dinner) — выберите верное:</div>
+      <div class="options-grid eng-grid" id="opts-66-3">
+        <button class="opt" onclick="answerEngMulti(this, '66_3', false, 66, 3)"><div class="opt-text"><strong>Dinner is at 5 o'clock</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_3', false, 66, 3)"><div class="opt-text"><strong>Traditional dinner is on Saturdays</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_3', true, 66, 3)"><div class="opt-text"><strong>Fish and chips is less popular than Indian food</strong></div></button>
+        <button class="opt" onclick="answerEngMulti(this, '66_3', false, 66, 3)"><div class="opt-text"><strong>Dinner is the smallest meal of the day</strong></div></button>
       </div>
       <div class="eng-feedback" id="eng-note-66"></div>
       <div class="nav-row">
@@ -1103,42 +1034,7 @@
       </div>
     </div>
 
-    <div class="quiz-slide" id="slide-67">
-      <div class="quiz-q-num">Английский язык · 30 из 31</div>
-      <div class="eng-reading-text">Lunch is between midday and 1.30 p.m., and in England people are more likely to have a smaller meal in the middle of the day. For example, a sandwich and a packet of crisps, or a takeaway, which they can eat at their desk. They often work while they eat.</div>
-      <div class="quiz-q">Выберите правильный вариант: Lunch is _____</div>
-      <div class="options-grid eng-grid" id="opts-teen-67">
-        <button class="opt" onclick="answerEng(this, 67, true)"><div class="opt-text"><strong>between 12 and 1.30 p.m.</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 67, false)"><div class="opt-text"><strong>in the evening</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 67, false)"><div class="opt-text"><strong>very big</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 67, false)"><div class="opt-text"><strong>after 2 o'clock</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 67, false)"><div class="opt-text"><strong>at home</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-67"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(67)">← Назад</button>
-        <button class="btn-next" id="next67" onclick="goNext(67)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-68">
-      <div class="quiz-q-num">Английский язык · 31 из 31</div>
-      <div class="eng-reading-text">Dinner is the biggest meal of the day and we have it between 6 and 8 p.m. Today, many families enjoy a traditional dinner on Sundays, but during the rest of the week we like to cook lots of different things, including food from other countries. Indian food is now more popular in England than fish and chips.</div>
-      <div class="quiz-q">Выберите правильный вариант:</div>
-      <div class="options-grid eng-grid" id="opts-teen-68">
-        <button class="opt" onclick="answerEng(this, 68, false)"><div class="opt-text"><strong>Dinner is at 5 o'clock</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 68, false)"><div class="opt-text"><strong>Traditional dinner is on Saturdays</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 68, true)"><div class="opt-text"><strong>Fish and chips is less popular than Indian food</strong></div></button>
-        <button class="opt" onclick="answerEng(this, 68, false)"><div class="opt-text"><strong>Dinner is the smallest meal of the day</strong></div></button>
-      </div>
-      <div class="eng-feedback" id="eng-note-68"></div>
-      <div class="nav-row">
-        <button class="btn-back" onclick="goBack(68)">← Назад</button>
-        <button class="btn-next" id="next68" onclick="goNext(68)" disabled>Далее →</button>
-      </div>
-    </div>
-
-    <div class="quiz-slide" id="slide-69">
+<div class="quiz-slide" id="slide-69">
       <div class="quiz-q-num">Интересы</div>
       <div class="quiz-q">Чем ребёнок любит заниматься в свободное время?</div>
       <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>

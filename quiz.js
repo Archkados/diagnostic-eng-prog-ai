@@ -208,8 +208,8 @@ function skipAudio(slideNum, fieldId) {
 
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxhtEQCSBDXxp-Grji-SKSOjsyhNtLzgd6KbISzz7cFfmFCcJCreYvvziosyR-Th9gI2A/exec";
 
-const KIDS_SLIDES  = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28];
-const TEENS_SLIDES = [38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68];
+const KIDS_SLIDES  = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26];
+const TEENS_SLIDES = [38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,66];
 
 let engBranch = 'kids';
 let engMax    = 17;
@@ -306,6 +306,27 @@ function syncNext(groupId, nextBtnId) {
 }
 
 const engAnswered = {};
+
+function answerEngMulti(btn, qid, isCorrect, slideNum, totalQ) {
+  const grid = btn.closest('.options-grid');
+  if (engAnswered[qid] === true) {
+    engScore = Math.max(0, engScore - 1);
+  }
+  grid.querySelectorAll('.opt').forEach(b => b.classList.remove('selected', 'correct', 'wrong'));
+  btn.classList.add('selected');
+  if (isCorrect) {
+    engScore++;
+    engAnswered[qid] = true;
+  } else {
+    engAnswered[qid] = false;
+  }
+  let answeredCount = 0;
+  for (let i = 1; i <= totalQ; i++) {
+    if (engAnswered[slideNum + '_' + i] !== undefined) answeredCount++;
+  }
+  const nextBtn = document.getElementById('next' + slideNum);
+  if (nextBtn && answeredCount >= totalQ) nextBtn.disabled = false;
+}
 
 function answerEng(btn, slideNum, isCorrect) {
   const grid = btn.closest('.options-grid');
@@ -811,10 +832,10 @@ function restart() {
     'next7', 'next8', 'next9', 'next10', 'next11', 'next12',
     'next13', 'next14', 'next15',
     'next16', 'next17', 'next18', 'next19', 'next20', 'next21',
-    'next22', 'next23', 'next24', 'next25', 'next26', 'next27', 'next28',
+    'next22', 'next26',
     'next69', 'next70', 'next71', 'next72', 'next73', 'next74',
     'next29', 'next30', 'next31', 'next32', 'next33', 'next34', 'next35', 'next36',
-    'next38', 'next39', 'next40', 'next41', 'next42', 'next43', 'next44', 'next45', 'next46', 'next47', 'next48', 'next49', 'next50', 'next51', 'next52', 'next53', 'next54', 'next55', 'next56', 'next57', 'next58', 'next59', 'next60', 'next61', 'next62', 'next63', 'next64', 'next65', 'next66', 'next67', 'next68',
+    'next38', 'next39', 'next40', 'next41', 'next42', 'next43', 'next44', 'next45', 'next46', 'next47', 'next48', 'next49', 'next50', 'next51', 'next52', 'next53', 'next54', 'next55', 'next56', 'next57', 'next58', 'next59', 'next60', 'next61', 'next62', 'next66',
     'nextSubmit'
   ];
   toDisable.forEach(id => {
