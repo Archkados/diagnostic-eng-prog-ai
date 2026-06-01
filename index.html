@@ -71,6 +71,7 @@
 
 <section class="hero" id="hero">
   <div class="hero-glow"></div>
+  <img src="img/logo.jpg" alt="Morrison Academy" class="hero-logo">
   <div class="badge"><span></span> Бесплатная диагностика за 5 минут</div>
   <h1>Английский, программирование и ИИ:<br>какой уровень у <em>вашего</em><br>ребёнка?</h1>
   <p class="hero-sub">Пройдите тест — и мы пришлём персональную диагностику уровня английского, программирования и знакомства с ИИ-инструментами</p>
@@ -80,7 +81,7 @@
 <div class="quiz-wrap" id="quizWrap">
 
   <div class="quiz-header">
-    <div class="quiz-logo">Morrison Code</div>
+    <img src="img/logo.jpg" alt="Morrison Academy" class="quiz-logo-img">
     <div class="quiz-progress-wrap">
       <div class="quiz-progress-track">
         <div class="quiz-progress-fill" id="progressFill"></div>
@@ -1073,24 +1074,25 @@
     <div class="quiz-slide" id="slide-70">
       <div class="quiz-q-num">Запрос родителя · 1 из 5</div>
       <div class="quiz-q">Что для вас главная цель занятий?</div>
+      <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>
       <div class="options-grid" id="opts-req-reason">
-        <button class="opt" onclick="selectOpt(this,'opts-req-reason');autoNext(70)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-reason');syncNext('opts-req-reason','next70')">
           <span class="opt-icon">💼</span>
           <div class="opt-text"><strong>Подготовка к будущей профессии</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-reason');autoNext(70)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-reason');syncNext('opts-req-reason','next70')">
           <span class="opt-icon">🚀</span>
           <div class="opt-text"><strong>Развитие способностей и интереса</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-reason');autoNext(70)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-reason');syncNext('opts-req-reason','next70')">
           <span class="opt-icon">📈</span>
           <div class="opt-text"><strong>Подтянуть знания</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-reason');autoNext(70)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-reason');syncNext('opts-req-reason','next70')">
           <span class="opt-icon">🧭</span>
           <div class="opt-text"><strong>Профориентация — понять, что нравится</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-reason');autoNext(70)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-reason');syncNext('opts-req-reason','next70')">
           <span class="opt-icon">🎯</span>
           <div class="opt-text"><strong>Занять свободное время с пользой</strong></div>
         </button>
@@ -1104,24 +1106,25 @@
     <div class="quiz-slide" id="slide-71">
       <div class="quiz-q-num">Запрос родителя · 2 из 5</div>
       <div class="quiz-q">Что вас сейчас больше всего беспокоит?</div>
+      <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>
       <div class="options-grid" id="opts-req-worry">
-        <button class="opt" onclick="selectOpt(this,'opts-req-worry');autoNext(71)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-worry');syncNext('opts-req-worry','next71')">
           <span class="opt-icon">📋</span>
           <div class="opt-text"><strong>Нет дисциплины и регулярности</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-worry');autoNext(71)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-worry');syncNext('opts-req-worry','next71')">
           <span class="opt-icon">📱</span>
           <div class="opt-text"><strong>Много времени в гаджетах</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-worry');autoNext(71)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-worry');syncNext('opts-req-worry','next71')">
           <span class="opt-icon">😕</span>
           <div class="opt-text"><strong>Нет интереса к учёбе</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-worry');autoNext(71)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-worry');syncNext('opts-req-worry','next71')">
           <span class="opt-icon">🤷</span>
           <div class="opt-text"><strong>Не знает, чем хочет заниматься</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-worry');autoNext(71)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-worry');syncNext('opts-req-worry','next71')">
           <span class="opt-icon">✅</span>
           <div class="opt-text"><strong>Особо ничего — всё хорошо</strong></div>
         </button>
@@ -1135,20 +1138,21 @@
     <div class="quiz-slide" id="slide-72">
       <div class="quiz-q-num">Запрос родителя · 3 из 5</div>
       <div class="quiz-q">Есть ли опыт обучения на курсах?</div>
+      <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>
       <div class="options-grid" id="opts-req-exp">
-        <button class="opt" onclick="selectOpt(this,'opts-req-exp');autoNext(72)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-exp');syncNext('opts-req-exp','next72')">
           <span class="opt-icon">❌</span>
           <div class="opt-text"><strong>Нет, это первый раз</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-exp');autoNext(72)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-exp');syncNext('opts-req-exp','next72')">
           <span class="opt-icon">🔁</span>
           <div class="opt-text"><strong>Пробовали другие курсы</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-exp');autoNext(72)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-exp');syncNext('opts-req-exp','next72')">
           <span class="opt-icon">🏫</span>
           <div class="opt-text"><strong>Сейчас учится где-то ещё</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-exp');autoNext(72)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-exp');syncNext('opts-req-exp','next72')">
           <span class="opt-icon">💤</span>
           <div class="opt-text"><strong>Учился раньше, но бросил</strong></div>
         </button>
@@ -1162,20 +1166,21 @@
     <div class="quiz-slide" id="slide-73">
       <div class="quiz-q-num">Запрос родителя · 4 из 5</div>
       <div class="quiz-q">Какой результат хотите увидеть через 3–6 месяцев?</div>
+      <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>
       <div class="options-grid" id="opts-req-want">
-        <button class="opt" onclick="selectOpt(this,'opts-req-want');autoNext(73)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-want');syncNext('opts-req-want','next73')">
           <span class="opt-icon">💻</span>
           <div class="opt-text"><strong>Создал свой проект</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-want');autoNext(73)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-want');syncNext('opts-req-want','next73')">
           <span class="opt-icon">🗣️</span>
           <div class="opt-text"><strong>Уверенно говорит по-английски</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-want');autoNext(73)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-want');syncNext('opts-req-want','next73')">
           <span class="opt-icon">🤖</span>
           <div class="opt-text"><strong>Освоил основы программирования и ИИ</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-want');autoNext(73)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-want');syncNext('opts-req-want','next73')">
           <span class="opt-icon">🧭</span>
           <div class="opt-text"><strong>Понял, в какую сторону развиваться</strong></div>
         </button>
@@ -1189,24 +1194,25 @@
     <div class="quiz-slide" id="slide-74">
       <div class="quiz-q-num">Запрос родителя · 5 из 5</div>
       <div class="quiz-q">Что для вас важнее всего при выборе школы?</div>
+      <div class="quiz-q-sub multi-hint">Можно выбрать несколько</div>
       <div class="options-grid" id="opts-req-criterion">
-        <button class="opt" onclick="selectOpt(this,'opts-req-criterion');autoNext(74)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-criterion');syncNext('opts-req-criterion','next74')">
           <span class="opt-icon">🎯</span>
           <div class="opt-text"><strong>Гарантия результата</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-criterion');autoNext(74)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-criterion');syncNext('opts-req-criterion','next74')">
           <span class="opt-icon">👩‍🏫</span>
           <div class="opt-text"><strong>Опытные преподаватели</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-criterion');autoNext(74)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-criterion');syncNext('opts-req-criterion','next74')">
           <span class="opt-icon">🗓️</span>
           <div class="opt-text"><strong>Удобное расписание</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-criterion');autoNext(74)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-criterion');syncNext('opts-req-criterion','next74')">
           <span class="opt-icon">💰</span>
           <div class="opt-text"><strong>Цена</strong></div>
         </button>
-        <button class="opt" onclick="selectOpt(this,'opts-req-criterion');autoNext(74)">
+        <button class="opt multi" onclick="toggleOpt(this,'opts-req-criterion');syncNext('opts-req-criterion','next74')">
           <span class="opt-icon">📚</span>
           <div class="opt-text"><strong>Программа обучения</strong></div>
         </button>
@@ -1474,7 +1480,7 @@
         oninput="checkContact()" />
       <input class="input-field" id="parentEmail" type="email" placeholder="Email адрес"
         oninput="checkContact()" />
-      <input class="input-field" id="parentPhone" type="tel" placeholder="Телефон (необязательно)" />
+      <input class="input-field" id="parentPhone" type="tel" placeholder="Телефон" oninput="checkContact()" />
       <input class="input-field" id="notes" type="text" placeholder="Дополнительные пожелания (необязательно)" />
       <div class="error-msg" id="errorMsg">Пожалуйста, заполните имя и email</div>
       <div class="nav-row" style="margin-top:8px;">
