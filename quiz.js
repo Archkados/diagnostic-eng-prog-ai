@@ -208,6 +208,22 @@ function skipAudio(slideNum, fieldId) {
 
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxhtEQCSBDXxp-Grji-SKSOjsyhNtLzgd6KbISzz7cFfmFCcJCreYvvziosyR-Th9gI2A/exec";
 
+// Достаём ID сделки amoCRM из ссылки. Поддерживаем несколько вариантов имени параметра,
+// чтобы бот мог формировать ссылку как удобнее:
+//   ?lead_id=123  /  ?leadId=123  /  ?lead=123  /  ?utm_content=123  /  ?utm_term=123
+// Если ID в ссылке нет — вернётся '' и бэкенд создаст новую сделку, как раньше.
+function getLeadId() {
+  try {
+    var p = new URLSearchParams(window.location.search);
+    var keys = ['lead_id', 'leadId', 'lead', 'deal_id', 'dealId', 'utm_content', 'utm_term'];
+    for (var i = 0; i < keys.length; i++) {
+      var v = (p.get(keys[i]) || '').trim();
+      if (v && /^\d+$/.test(v)) return v;   // только числовой ID
+    }
+  } catch (e) {}
+  return '';
+}
+
 const KIDS_SLIDES  = [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26];
 const TEENS_SLIDES = [38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,66];
 
@@ -656,6 +672,7 @@ async function submitQuiz() {
     parentPhone: parentPhone || 'не указан',
     notes: (document.getElementById('notes').value || '').trim() || 'нет',
     diagType: includeProg ? 'Английский + Программирование + ИИ' : 'Английский + ИИ',
+    leadId: getLeadId(),
   };
 
   if (!includeProg) {
