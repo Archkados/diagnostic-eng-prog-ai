@@ -449,7 +449,7 @@ function buildReportHTML(d, R) {
     + reqRow('ПРИЧИНА ОБРАЩЕНИЯ', d.reqReason)
     + reqRow('БЕСПОКОИТ', d.reqWorry)
     + reqRow('ОПЫТ С КУРСАМИ', d.reqExp)
-    + reqRow('ХОЧЕТ ЧЕРЕЗ 3–6 МЕС', d.reqWant)
+    + reqRow('ХОЧЕТ ПОЛУЧИТЬ', d.reqWant)
     + reqRow('КРИТЕРИЙ ВЫБОРА', d.reqCriterion)
     + ((d.notes && d.notes!=='нет') ? reqRow('ПОЖЕЛАНИЯ', d.notes) : '');
   var parentReq = reqRows
@@ -501,6 +501,7 @@ function buildReportHTML(d, R) {
   + '.badge{font-size:11px;font-weight:700;border-radius:16px;padding:4px 13px;}'
   + '.badge.violet{background:#ede9fe;color:#6d28d9;}'
   + '.badge.green{background:#dcfce7;color:#15803d;}'
+  + '.badge.blue{background:#dbeafe;color:#1d4ed8;}'
   + '.muted{font-size:12px;color:#64748b;}'
   + '.bar{height:11px;border-radius:7px;background:#e2e8f0;overflow:hidden;margin:9px 0;}'
   + '.bar > span{display:block;height:100%;background:#16a34a;border-radius:7px;}'
@@ -570,6 +571,11 @@ function buildReportHTML(d, R) {
 
   + '<div class="inline-h"><span class="ih-t">🤖 ИИ-инструменты</span><span class="badge violet">'+e(R.aiToolsLevel)+'</span></div>'
   + '<div class="para" style="margin-top:0">'+e(R.aiToolsText)+'</div>'
+
+  + (hasProg
+      ? '<div class="inline-h"><span class="ih-t">💻 Программирование</span><span class="badge blue">'+e(d.progLevel)+'</span></div>'
+        + '<div class="para" style="margin-top:0">'+e(R.progText || R.aiToolsText)+'</div>'
+      : '')
 
   + '<div class="inline-h"><span class="ih-t">🇬🇧 Уровень английского</span><span class="badge green">'+e(d.engLevel)+'</span>'
   + '<span class="muted">'+d.engScore+' / '+d.engMax+' верных ('+d.pct+'%)</span></div>'
@@ -682,7 +688,7 @@ async function submitQuiz() {
     const d = {
       childName: data.childName, childAge: data.childAge, childClass: data.childClass,
       hasProg: includeProg, parentName: data.parentName, parentPhone: data.parentPhone, parentEmail: data.parentEmail,
-      progExp: data.progExp, engLevel: data.engLevel, engScore: data.engScore, engMax: data.engMax, pct: pct,
+      progExp: data.progExp, progLevel: data.progLevel, engLevel: data.engLevel, engScore: data.engScore, engMax: data.engMax, pct: pct,
       aiUsage: data.aiUsage, aiAwareness: data.aiAwareness, diagType: data.diagType,
       interests: data.interests,
       reqReason: data.reqReason, reqWorry: data.reqWorry, reqExp: data.reqExp,
